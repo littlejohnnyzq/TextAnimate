@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script language="JavaScript">
+        pushHistory();
+
+        function pushHistory() {
+            var state1 = {
+                title: "title",
+                url: "#"
+            };
+            window.history.pushState(state1, "title", "#");
+        }
+    </script>
     <meta charset="UTF-8">
     <title>十年纷飞.再聚一回</title>
     <link href="main.css" type="text/css" rel="stylesheet" />
