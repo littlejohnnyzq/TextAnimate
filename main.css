@@ -242,14 +242,14 @@ body{
 @keyframes tocase {
     0% {
         color: rgba(255,255,255,0.4);
-        line-height: 260px;
+        line-height: 300px;
     }
     50% {
         color: rgba(255,255,255,1);
-        line-height: 120px;
+        line-height: 100px;
     }
     100% {
         color: rgba(255,255,255,0.4);
-        line-height: 260px;
+        line-height: 300px;
     }
 }
