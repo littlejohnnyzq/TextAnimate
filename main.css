@@ -246,7 +246,7 @@ body{
     }
     50% {
         color: rgba(255,255,255,1);
-        line-height: 180px;
+        line-height: 160px;
     }
     100% {
         color: rgba(255,255,255,0.4);
