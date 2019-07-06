@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.tittle{
+    background: #fff;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    color: #000;
+    font-size: 8em;
+    font-weight: bolder;
+    font-family: "Arial Black","Microsoft YaHei";
+    z-index: 1;
+    margin-top: 25%;
+}
+.tittle p{
+    background: white;
+    left: 45%;
+    position: absolute;
+}
+.p0 {
+    animation: a0 300ms 3.2s ease-out forwards;
+}
+@keyframes a0 {
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(-0.8em)}
+}
+.p5 {
+    opacity: 0;
+    animation: a5 2.5s 1s linear forwards;
+}
+@keyframes a5 {
+    0% {opacity: 0}
+    1%{opacity: 1}
+    80%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-0.15em)}
+}
+.p6 {
+    opacity: 0;
+    animation: a6 1.5s 2s ease-out forwards;
+}
+@keyframes a6 {
+    0% {opacity: 0}
+    1%{opacity: 1}
+    80%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0.5em)}
+}
+.pban {
+    background: #f01213!important;
+    transform: translateY(2.8em);
+    padding: 8px;
+    line-height: 1.1em;
+    left: 62%!important;
+    position: absolute;
+    border-radius: 4px;
+    opacity: 0;
+    color: #fff;
+    font-size: 0.4em;
+    font-weight: bolder;
+    font-family: "Arial Black","Microsoft YaHei";
+    animation: aban 0.4s 4s linear forwards;
+}
+@keyframes aban {
+    0%{opacity: 0}
+    10%{opacity: 1}
+    30%{opacity: 0}
+    50%{opacity: 1}
+    60%{opacity: 0}
+    80%{opacity: 1}
+    90%{opacity: 0}
+    100%{opacity: 1}
+}
+.years {
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 4em;
+    height: 1.1em;
+    overflow: hidden;
+    font-family: "Arial","Microsoft YaHei";
+    opacity: 0;
+/*    transform: translateY(6em);*/
+    animation: aY 100ms 5s linear forwards;
+}
+@keyframes aY {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+.years span{
+    display: inline-block;
+    background: white;
+    left: 50%;
+}
+#aY1 {
+    animation: aY1 300ms 6.2s ease-in-out forwards;
+}
+@keyframes aY1 {
+    0%{transform: translateY(0em)}
+    100%{transform: translateY(-1.16em)}
+}
+#aY9 {
+    animation: aY9 2s 6.2s ease-in-out forwards;
+}
+@keyframes aY9 {
+    0%{transform: translateY(0em)}
+    100%{transform: translateY(-11.55em)}
+}
