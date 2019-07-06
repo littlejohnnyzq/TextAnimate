@@ -60,8 +60,8 @@ body{
         transform: translateX(0.5em)}
 }
 .pban {
-    background: #000!important;
-    transform: translateY(2.8em);
+    background: #f01213!important;
+    transform: translateY(2.5em);
     padding: 8px;
     line-height: 1.1em;
     left: 62%!important;
@@ -118,5 +118,5 @@ body{
 }
 @keyframes aY9 {
     0%{transform: translateY(0em)}
-    100%{transform: translateY(-11.55em)}
+    100%{transform: translateY(-11.7em)}
 }
