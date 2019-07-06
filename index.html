@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>十年纷飞</title>
     <link href="main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
@@ -15,24 +15,73 @@
 <div class="years"><span>20<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span><span id="aY1">0<br/>1<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span><span id="aY9">9<br/>0<br/>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9</span></div>
 <!--<div id="text" style="font-size: 36pt;text-align: center;color: #000;font-weight: bolder;">
 </div>-->
-</body>
-<script>
-    let divTyping = document.getElementById('text')
-    let i = 0,
-        timer = 3,
-        str = '056'
+<div class="cover">
+    <div class="coverpic"></div>
+</div>
+<!--<div class="typebox">
+    <span id="typed2"></span>
+</div>-->
+<div class="typebox">
+    <span id="typed"></span>
+</div>
+<div></div>
 
-    function typing () {
-        if (i <= str.length) {
-            divTyping.innerHTML = str.slice(0, i++) + '_'
-            timer = setTimeout('typing()', 600)
-        }
-        else {
-            divTyping.innerHTML = str//结束打字,移除 _ 光标
-            clearTimeout(timer)
+</body>
+<script language="JavaScript">
+    //预设的文字
+    var text1 = '很快～，转眼十年。<br><br>'
+        + '春上村树说，以后我们会忘记彼此的样子，但会记得一起经历的喜怒哀乐，<br><br>'
+        + '嗯...春上村树没说过，我编的。<br><br>'
+        + '我记得在美陂偷红薯被村妇骂；在梅岭凌晨围着火堆瑟瑟发抖。<br><br>'
+        + '但记不清一块干那些傻逼事的都有谁，总之是我们'
+    //文字出现的时间间隔
+    var delay = 60 ;
+    //初始化变量 i
+    var i = 0 ;
+    function writeText(){
+        var typed = document.getElementById('typed');
+        //设置 id 为 demo 的对象内的文字为从变量 text 的 0 开始到 i 间的文字加"_"
+        typed.innerHTML = text1.slice(0,i++) + "_" ;
+
+        if ( i > text1.length ) { //当 i 大于 text 的文本长度时
+            i = 0 ; //重设 i 为 0，使文字重新从第一个文字出现
+
+            //延时执行writeText()函数,12秒时候重新执行
+            setTimeout("writeText()",4000) ;
+
+        } else {
+            //否则在delay毫秒后再次执行writeText()函数
+            setTimeout("writeText()",delay) ;
         }
     }
 
-    typing()
+    writeText() ;//调用writeText()函数
+</script>
+<script language="JavaScript">
+    //预设的文字
+    var text = '十年了，总有想见你的、你想见的人<br><br>'
+
+    //文字出现的时间间隔
+    var delay = 80 ;
+    //初始化变量 i
+    var i = 0 ;
+    function writeText2(){
+        var typed2 = document.getElementById('typed2');
+        //设置 id 为 demo 的对象内的文字为从变量 text 的 0 开始到 i 间的文字加"_"
+        typed2.innerHTML = text.slice(0,i++) + "_" ;
+
+        if ( i > text.length ) { //当 i 大于 text 的文本长度时
+            i = 0 ; //重设 i 为 0，使文字重新从第一个文字出现
+
+            //延时执行writeText()函数,12秒时候重新执行
+            setTimeout("writeText2()",4000) ;
+
+        } else {
+            //否则在delay毫秒后再次执行writeText()函数
+            setTimeout("writeText2()",delay) ;
+        }
+    }
+
+    writeText2() ;//调用writeText()函数
 </script>
 </html>

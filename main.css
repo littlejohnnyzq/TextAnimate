@@ -1,6 +1,8 @@
 body{
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .tittle{
     background: #fff;
@@ -12,7 +14,7 @@ body{
     font-weight: bolder;
     font-family: "Arial Black","Microsoft YaHei";
     z-index: 1;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 .tittle p{
     background: white;
@@ -107,16 +109,60 @@ body{
     left: 50%;
 }
 #aY1 {
-    animation: aY1 300ms 6.2s ease-in-out forwards;
+    animation: aY1 360ms 6.2s ease-in-out forwards;
 }
 @keyframes aY1 {
     0%{transform: translateY(0em)}
     100%{transform: translateY(-1.16em)}
 }
 #aY9 {
-    animation: aY9 2s 6.2s ease-in-out forwards;
+    animation: aY9 3s 6.2s ease-in-out forwards;
 }
 @keyframes aY9 {
     0%{transform: translateY(0em)}
     100%{transform: translateY(-11.7em)}
+}
+.cover {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    background: rgba(240,18,19,1);
+}
+.coverpic {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background: url("./images/126.jpg" ) no-repeat center;
+    animation: coverpic 5s 10.5s ease-out forwards;
+}
+@keyframes coverpic {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    30%{
+        height: 320px;
+        opacity: 0.1;
+    }
+    100%{
+        height: 320px;
+        opacity: 1;
+    }
+}
+.typebox{
+    width: 80%;
+    height: 900px;
+    margin: 10%;
+    box-sizing: border-box;
+    text-align: left;
+    color: #555555;
+    font-size: 32px;
+    opacity: 0;
+    animation: typedbox 10ms 15.5s linear forwards;
+}
+@keyframes typedbox {
+    0%{opacity: 0}
+    100%{opacity: 1}
 }
