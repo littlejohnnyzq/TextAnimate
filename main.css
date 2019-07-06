@@ -62,7 +62,7 @@ body{
 }
 .pban {
     background: #f01213!important;
-    transform: translateY(2.1em);
+    transform: translateY(2.2em);
     padding: 8px;
     line-height: 1.3em;
     left: 62%!important;
@@ -151,17 +151,17 @@ body{
     }
 }
 .typebox{
-    width: 80%;
+    width: 70%;
     height: 900px;
-    margin: 10%;
+    margin: 15%;
     box-sizing: border-box;
     text-align: left;
     position: absolute;
-    color: #555555;
+    color: #000;
     font-size: 2.4em;
     line-height: 1.2em;
     opacity: 0;
-    animation: typedbox 10ms 10.5s linear forwards;
+    animation: typedbox 10ms 9s linear forwards;
 }
 @keyframes typedbox {
     0%{opacity: 0}
@@ -170,16 +170,16 @@ body{
 .typebox1{
     background: #fff;
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 900px;
-    margin: 10%;
+    margin: 15%;
     box-sizing: border-box;
     text-align: left;
-    color: #555555;
+    color: #000;
     font-size: 2.4em;
     line-height: 1.2em;
     opacity: 0;
-    animation: typedbox 10ms 20.4s linear forwards;
+    animation: typedbox 10ms 17s linear forwards;
 }
 @keyframes typedbox {
     0%{opacity: 0}
@@ -188,16 +188,16 @@ body{
 .typebox2{
     background: #fff;
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 900px;
-    margin: 10%;
+    margin: 15%;
     box-sizing: border-box;
     text-align: left;
     color: #000;
-    font-size: 2.8em;
+    font-size: 2.4em;
     line-height: 1.2em;
     opacity: 0;
-    animation: typedbox 10ms 29.1s linear forwards;
+    animation: typedbox 10ms 26.1s linear forwards;
 }
 @keyframes typedbox {
     0%{opacity: 0}
@@ -206,17 +206,45 @@ body{
 .come {
     background: #ffffff url("./images/76.jpg") no-repeat center;
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 700px;
-    margin: 5%;
+    margin: 0;
     box-sizing: border-box;
     text-align: center;
     color: #000;
     font-size: 4em;
     opacity: 0;
-    animation: typedbox 10ms 35.5s linear forwards;
+    animation: typedbox 10ms 37s linear forwards;
 }
 @keyframes typedbox {
     0%{opacity: 0}
     100%{opacity: 1}
+}
+.tocase {
+    width: 100%;
+    height: 180px;
+    background: #f01213;
+    color: rgba(255,255,255,0.3);
+    font-size: 3em;
+    line-height: 180px;
+    display: block;
+    text-align: center;
+    animation: tocase 2s 37s ease-out infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes tocase {
+    0% {
+        color: rgba(255,255,255,0.4);
+        line-height: 180px;
+    }
+    50% {
+        color: rgba(255,255,255,1);
+        line-height: 140px;
+    }
+    100% {
+        color: rgba(255,255,255,0.4);
+        line-height: 180px;
+    }
 }
