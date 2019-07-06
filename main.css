@@ -7,7 +7,7 @@ body{
 .tittle{
     background: #fff;
     width: 100%;
-    height: 160px;
+    height: 120px;
     text-align: center;
     color: #000;
     font-size: 8em;
@@ -207,7 +207,7 @@ body{
     background: #ffffff url("./images/76.jpg") no-repeat center;
     position: absolute;
     width: 90%;
-    height: 1000px;
+    height: 860px;
     margin: 5%;
     box-sizing: border-box;
     text-align: center;
