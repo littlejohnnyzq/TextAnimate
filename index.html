@@ -31,18 +31,17 @@
     //预设的文字
     var text1 = '很快～，转眼十年。<br><br>'
         + '春上村树说，以后我们会忘记彼此的样子，但会记得一起经历的喜怒哀乐，<br><br>'
-        + '嗯...春上村树没说过，我编的。<br><br>'
+        + '嗯..春上村树没说过，我编的。<br><br>'
         + '我记得在美陂偷红薯被村妇骂；在梅岭凌晨围着火堆瑟瑟发抖。<br><br>'
-        + '但记不清一块干那些傻逼事的都有谁，总之是我们'
+        + '但记不清一块干那些傻逼事的都有谁，总之是我们。<br>'
     //文字出现的时间间隔
-    var delay = 60 ;
+    var delay = 50 ;
     //初始化变量 i
     var i = 0 ;
     function writeText(){
         var typed = document.getElementById('typed');
         //设置 id 为 demo 的对象内的文字为从变量 text 的 0 开始到 i 间的文字加"_"
-        typed.innerHTML = text1.slice(0,i++) + "_" ;
-
+        typed.innerHTML = text1.slice(0,++i) + "_" ;
         if ( i > text1.length ) { //当 i 大于 text 的文本长度时
             i = 0 ; //重设 i 为 0，使文字重新从第一个文字出现
 
